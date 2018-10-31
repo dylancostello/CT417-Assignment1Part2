@@ -1,0 +1,13 @@
+language: java
+jdk:
+    -jdk8
+
+after_success:
+    - mvn clean
+    - mvn test
+    
+notifications:
+email:
+recipients:
+    - d.costello17@nuigalway.ie
+---
